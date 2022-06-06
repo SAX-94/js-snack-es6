@@ -45,6 +45,7 @@ console.log(lightest);
 
 
 //Print name and weight of the lighttest bike
+// @ts-ignore
 let {name, weight} = lightest
 
 let printOutput = document.getElementById("container");
