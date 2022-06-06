@@ -38,7 +38,6 @@ for (let i = 0; i < racingBikes.length; i++) {
     let bike = racingBikes[i];
     if (lightest["weight"] > bike["weight"]) {
         lightest = bike;
-
     }
 }
 // This is the lightest bike
