@@ -42,3 +42,11 @@ for (let i = 0; i < racingBikes.length; i++) {
 }
 // This is the lightest bike
 console.log(lightest);
+
+
+//Print name and weight of the lighttest bike
+let {name, weight} = lightest
+
+let printOutput = document.getElementById("container");
+
+container.innerHTML = `<div><h1 class="text-center">La ${name} ha un peso di ${weight} kg.<br>E' la più leggera della lista.</h1></div>`
