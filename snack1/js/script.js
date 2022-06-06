@@ -1,12 +1,8 @@
 
 /* Array with objects that describe racing bycicles.
-Weights are expressed in kilograms */
+Weights are expressed in kilograms. */
 
 const racingBikes = [
-    {
-        name: "Specialized Venge Pro",
-        weight: 7.4
-    },
     {
         name: "Cube Attain GTC Race",
         weight: 8.1
@@ -14,6 +10,10 @@ const racingBikes = [
     {
         name: "Colnago CLX",
         weight: 8.4
+    },
+    {
+        name: "Specialized Venge Pro",
+        weight: 7.4
     },
     {
         name: "Cannondale Synapse",
@@ -27,4 +27,19 @@ const racingBikes = [
         name: "Trek Domane SL5",
         weight: 9.7
     },
-]
+];
+
+/* Let's use a for...loop to find out which one is lighter */
+
+let lightest = racingBikes[0];
+console.log(lightest);
+
+for (let i = 0; i < racingBikes.length; i++) {
+    let bike = racingBikes[i];
+    if (lightest["weight"] > bike["weight"]) {
+        lightest = bike;
+
+    }
+}
+// This is the lightest bike
+console.log(lightest);
