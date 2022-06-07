@@ -7,3 +7,8 @@ let students = [
     { name: "Piero", id: 102, grades: 50 },
     { name: "Francesca", id: 120, grades: 84 },
 ];
+
+
+// Capitalize every name
+const studentCapitalizedName = students.map(({name}) => name.toUpperCase());
+console.log(studentCapitalizedName);
