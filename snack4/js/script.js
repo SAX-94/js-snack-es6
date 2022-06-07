@@ -9,6 +9,10 @@ let students = [
 ];
 
 
-// Capitalize every name
-const studentCapitalizedName = students.map(({name}) => name.toUpperCase());
-console.log(studentCapitalizedName);
+// Capitalize every student name
+const studentCapitalizedNames = students.map(({name}) => name.toUpperCase());
+console.log(studentCapitalizedNames);
+
+// Select students who have grades above 70
+const gradesOver70 = students.filter(({grades}) => grades > 70);
+console.log(gradesOver70);
