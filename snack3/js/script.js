@@ -21,5 +21,5 @@ console.log(newArray1);
 /*
 // Done with filter
 */
-newArray2 = myArray.filter((name, i) => i >= min && i <= max)
+newArray2 = myArray.filter((name, i) => i >= min && i <= max);
 console.log(newArray2);
